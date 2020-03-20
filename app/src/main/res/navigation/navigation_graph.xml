@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/blankFragment">
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.agora.classroom.demo.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_broadCastFragment"
+            app:destination="@id/broadCastFragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_groupChatFragment"
+            app:destination="@id/groupChatFragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_ontoOneChatFragment"
+            app:destination="@id/ontoOneChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/broadCastFragment"
+        android:name="com.agora.classroom.demo.BroadCastFragment"
+        android:label="fragment_broad_cast"
+        tools:layout="@layout/fragment_broad_cast" />
+    <fragment
+        android:id="@+id/groupChatFragment"
+        android:name="com.agora.classroom.demo.GroupChatFragment"
+        android:label="fragment_group_chat"
+        tools:layout="@layout/fragment_group_chat" />
+    <fragment
+        android:id="@+id/ontoOneChatFragment"
+        android:name="com.agora.classroom.demo.OntoOneChatFragment"
+        android:label="fragment_onto_one_chat"
+        tools:layout="@layout/fragment_onto_one_chat" />
+</navigation>

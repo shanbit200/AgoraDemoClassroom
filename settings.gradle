@@ -1,0 +1,5 @@
+rootProject.name='AgoraDemoClassRoom'
+include ':app'
+include ':agorasdk'
+include ':agorabase'
+include ':agorapp'
